@@ -1,0 +1,10 @@
+# Données fournies par l'enseignant : ne pas versionner (voir README)
+donnees
+*.zip
+# Résultats régénérables par les scripts
+resultats/*
+!resultats/.gitkeep
+# Python
+__pycache__/
+.venv/
+.pytest_cache/
