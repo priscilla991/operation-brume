@@ -74,3 +74,15 @@ lu et compris ; les résultats et les conclusions du rapport sont vérifiés sur
 
 Projet 100 % défensif : lecture de journaux fictifs uniquement. Aucune donnée réelle, aucun code offensif.
 Les scripts ne font que lire les fichiers et n'exécutent aucun contenu issu des journaux.
+
+## Résultats attendus
+
+| Script | Fichiers produits dans `resultats/` |
+|---|---|
+| 01_normale.py | periode.csv, profil_*.csv, journee_type.png |
+| 02_entree.py | mails_suspects.csv, vpn_anormal.csv |
+| 03_progression.py | balayage.csv, rafales_echecs.csv, comptes_crees.csv |
+| 04_impact.py | envois_par_hote.csv, exfiltration.csv, exfiltration.png |
+| 05_chronologie.py | chronologie.csv, iocs.csv, regles_detection.csv, frise.png |
+
+Le rapport d'investigation et le support de soutenance sont dans `docs/`.
