@@ -35,6 +35,7 @@ ioc.to_csv(args.sortie / "iocs.csv", index=False)
 
 titre(f"3. Règles de détection testées sur 3 semaines (sabotage le {r['debut_sabotage']})")
 ev = regles.evaluer(data, r["debut_sabotage"])
+ev["avance_sur_sabotage"] = ev["avance_sur_sabotage"].map(lambda d: f"{d.days} j {d.seconds // 3600} h" if pd.notna(d) else "—")
 with pd.option_context("display.max_colwidth", 70, "display.width", 200):
     print(ev.to_string(index=False))
 ev.to_csv(args.sortie / "regles_detection.csv", index=False)
