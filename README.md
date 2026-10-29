@@ -85,4 +85,4 @@ Les scripts ne font que lire les fichiers et n'exécutent aucun contenu issu des
 | 04_impact.py | envois_par_hote.csv, exfiltration.csv, exfiltration.png |
 | 05_chronologie.py | chronologie.csv, iocs.csv, regles_detection.csv, frise.png |
 
-Le rapport d'investigation et le support de soutenance sont dans `docs/`.
+Le rapport d'investigation est dans `docs/`.
